@@ -16,6 +16,7 @@ gen/
 /example/dice/dice
 /example/namedtracer/namedtracer
 /example/otel-collector/otel-collector
+/example/otel-collector-http/otel-collector-http
 /example/opencensus/opencensus
 /example/passthrough/passthrough
 /example/prometheus/prometheus
