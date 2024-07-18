@@ -129,6 +129,7 @@ func main() {
 		"CollectorExporter-Example",
 		trace.WithAttributes(commonAttrs...))
 	defer span.End()
+	log.Printf("trace id: %s",span.SpanContext().TraceID().String())
 	for i := 0; i < 10; i++ {
 		_, iSpan := tracer.Start(ctx, fmt.Sprintf("Sample-%d", i))
 		runCount.Add(ctx, 1, metric.WithAttributes(commonAttrs...))
